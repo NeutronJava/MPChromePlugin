@@ -1,6 +1,6 @@
 <script src="popup.js"></script>
 chrome.runtime.onMessage.addListener(
   function myFunc(request, sender, sendResponse) {
-    <div data-internalid=String(request)></div>;
+    <h1>request.value</h1>;
     chrome.runtime.onMessage.removeListener(myFunc); //if you want to stop listening after receiving the message
 });
