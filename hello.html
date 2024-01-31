@@ -1,6 +1,10 @@
 <html>
   <body>
-    <h1>The meaning of life is:</h1>
     <script src="popup.js"></script>
+    chrome.runtime.onMessage.addListener(
+    function myFunc(request, sender, sendResponse) {
+        <h1>request</h1>;
+        chrome.runtime.onMessage.removeListener(myFunc); //if you want to stop listening after receiving the message
+    });
   </body>
 </html>
