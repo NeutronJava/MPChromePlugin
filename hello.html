@@ -1,11 +1,6 @@
+<script src="popup.js"></script>
 chrome.runtime.onMessage.addListener(
   function myFunc(request, sender, sendResponse) {
     <div data-internalid=String(request)></div>;
     chrome.runtime.onMessage.removeListener(myFunc); //if you want to stop listening after receiving the message
 });
-<html>
-  <body>
-    <script src="popup.js"></script>
-    <h1>$(this).data('internalid')</h1>
-  </body>
-</html>
