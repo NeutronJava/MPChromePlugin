@@ -1,2 +1,2 @@
 # MPChromePlugin
-MP standing for "My Personal"
+Just a test
